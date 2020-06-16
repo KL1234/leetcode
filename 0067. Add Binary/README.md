@@ -48,8 +48,6 @@ public:
                ans[c-1]+=1;
            }
         }
-        
-        
         return ans;
     }
 };
