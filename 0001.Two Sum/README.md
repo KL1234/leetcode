@@ -36,6 +36,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
     return ans;
 }
 ```
+java
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
