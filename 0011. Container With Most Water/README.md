@@ -4,46 +4,36 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 
 ## 题目
 
-Given a sorted linked list, delete all duplicates such that each element appear only once.
+Given n non-negative integers a1, a2, ..., an , where each represents a point at coordinate     
+(i, ai).n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0).    
+Find two lines, which together with x-axis forms a container, such that the container contains    
+the most water.   
+
+Note: You may not slant the container and n is at least 2.
 
 範例:
 
-* Input: 1->1->2     
-  Output: 1->2
-
-* Input: 1->1->2     
-  Output: 1->2
+* Input: [1,8,6,2,5,4,8,3,7]     
+  Output: 49
 
 ## 程式
-```cpp
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    ListNode* deleteDuplicates(ListNode* head) {
-        ListNode* ptr = head;
-        ListNode* cur = head;
-        
-        while(ptr!=NULL){
-            while(cur->val == ptr->val){
-                if(cur->next==NULL) break;
-                cur=cur->next;
+```c
+int maxArea(int* height, int heightSize){
+    int i,j,max=0,min;
+    for(i=0;i<heightSize;i++){
+        for(j=heightSize-1;j>i;j--){
+            if(height[j]<height[heightSize-1]) continue;
+            
+            if(height[i]>height[j]){
+                min=height[j];
             }
-            if(cur->next==nullptr && cur->val == ptr->val){ptr->next=NULL; break;}
-            ptr->next=cur;
-            ptr=ptr->next;
+            else min=height[i];
+            if((j-i)*min>max){
+                max=(j-i)*min;
+            }
         }
-        
-        return head;
     }
-};
+    return max;
+}
 ```
 

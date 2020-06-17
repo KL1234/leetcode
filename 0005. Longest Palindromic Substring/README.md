@@ -1,6 +1,6 @@
 ## 题目地址
 
-https://leetcode.com/problems/longest-palindromic-substring/
+https://leetcode.com/problems/longest-palindromic-substring
 
 ## 题目
 
