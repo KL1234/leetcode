@@ -14,6 +14,7 @@ Given a string s, find the longest palindromic substring in s. You may assume th
   Output: "bb"    
 
 ## 程式
+c
 ```c
 char * longestPalindrome(char * s){
     int i=1,max=0,head=0,tail=0,th=0,tt=0,i2=0;
