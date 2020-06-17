@@ -21,6 +21,7 @@ You may assume no duplicates in the array.
   Output: 0
   
 ## 程式
+c
 ```c
 int searchInsert(int* nums, int numsSize, int target){
 int i=0;
