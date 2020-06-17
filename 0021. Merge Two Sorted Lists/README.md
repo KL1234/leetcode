@@ -10,6 +10,7 @@ Merge two sorted linked lists and return it as a new ***sorted*** list. The new 
   Output: 1->1->2->3->4->4
   
 ## 程式
+c++
 ```cpp
 /**
  * Definition for singly-linked list.
