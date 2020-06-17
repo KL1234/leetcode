@@ -1,6 +1,4 @@
-## 题目地址
-
-https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+# [11.Container With Most Water](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
 
 ## 题目
 

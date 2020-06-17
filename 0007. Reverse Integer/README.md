@@ -1,6 +1,4 @@
-## 题目地址
-
-https://leetcode.com/problems/reverse-integer/
+# [7.Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
 ## 题目
 

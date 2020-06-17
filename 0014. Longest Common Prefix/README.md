@@ -1,49 +1,58 @@
-## 题目地址
-
-https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+# [14.Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
 
 ## 题目
 
-Given a sorted linked list, delete all duplicates such that each element appear only once.
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
 
 範例:
 
-* Input: 1->1->2     
-  Output: 1->2
+* Input: ["flower","flow","flight"]       
+  Output: "fl"
 
-* Input: 1->1->2     
-  Output: 1->2
-
+* Input: ["dog","racecar","car"]    
+  Output: ""     
+  Explanation: There is no common prefix among the input strings.       
+  
 ## 程式
-```cpp
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    ListNode* deleteDuplicates(ListNode* head) {
-        ListNode* ptr = head;
-        ListNode* cur = head;
-        
-        while(ptr!=NULL){
-            while(cur->val == ptr->val){
-                if(cur->next==NULL) break;
-                cur=cur->next;
-            }
-            if(cur->next==nullptr && cur->val == ptr->val){ptr->next=NULL; break;}
-            ptr->next=cur;
-            ptr=ptr->next;
+```c
+void *magic(char* s1, char* s2,char *a){
+    int l=0;
+    int i=0;
+    
+    if(strlen(s1)<strlen(s2)) l=strlen(s1);
+    else l=strlen(s2);
+    
+    i=0;
+  
+    while(i<l){
+        if(s1[i]==s2[i]){
+            a[i]=s1[i];
         }
-        
-        return head;
+        else break;
+         
+        i++;
     }
-};
+ 
+
+    return;
+}
+
+char * longestCommonPrefix(char ** strs, int strsSize){
+    static char ans[1000];
+    int i,i2;
+    if (strsSize==1) return strs[0];
+    for(i=0;i<strsSize-1;i++){
+        for(i2=0;i2<1000;i2++){
+            ans[i2]=0;
+         }
+        
+        magic(strs[i],strs[i+1],ans);
+        strcpy(strs[i+1],ans);
+      
+    }
+    return &ans[0];
+}
 ```
 
