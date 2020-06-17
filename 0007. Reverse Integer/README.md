@@ -12,6 +12,7 @@ Given a 32-bit signed integer, reverse digits of an integer.
 * Input: -123      
   Output: -321      
 ## 程式
+c
 ```c
 int reverse(int x){
     int a=0;

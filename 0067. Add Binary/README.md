@@ -15,6 +15,7 @@ The input strings are both ***non-empty*** and contains only characters 1 or 0.
   Output: "10101"
   
 ## 程式
+c++
 ```cpp
 class Solution {
 public:

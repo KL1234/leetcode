@@ -15,6 +15,7 @@ Note: You may not slant the container and n is at least 2.
   Output: 49
 
 ## 程式
+c
 ```c
 int maxArea(int* height, int heightSize){
     int i,j,max=0,min;

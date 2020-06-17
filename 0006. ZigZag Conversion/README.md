@@ -27,6 +27,7 @@ string convert(string s, int numRows);
   P     I       
 
 ## 程式
+c
 ```c
 char * convert(char * s, int numRows){
     int i,l,kl,a,b,r,temp;

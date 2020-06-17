@@ -13,6 +13,7 @@ You may assume that each input would have ***exactly*** one solution, and you ma
   return [0, 1]. 
 
 ## 程式
+c
 ```c
 /**
  * Note: The returned array must be malloced, assume caller calls free().
@@ -35,4 +36,15 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
     return ans;
 }
 ```
-
+java
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for(int i=0;i<nums.length;i++)
+            for(int j=i+1;j<nums.length;j++)
+                if((nums[i]+nums[j])==target)
+                    return new int[]{i,j};
+        return new int[0];
+    }   
+}
+```

@@ -10,6 +10,7 @@ Merge two sorted linked lists and return it as a new ***sorted*** list. The new 
   Output: 1->1->2->3->4->4
   
 ## 程式
+c++
 ```cpp
 /**
  * Definition for singly-linked list.
@@ -54,5 +55,59 @@ public:
         return head;
     }
 };
+```
+c
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+    struct ListNode* l3;
+    struct ListNode* ptr;
+    l3=(struct ListNode*)malloc(sizeof(struct ListNode));
+    ptr=l3;
+    while(1){
+        if(l1==NULL && l2==NULL) { l3=NULL; break;}
+        if(l1==NULL){
+            ptr->val=l2->val;
+            if(l2->next==NULL){ptr->next=NULL; break;} 
+            ptr->next=(struct ListNode*)malloc(sizeof(struct ListNode));
+            ptr=ptr->next;
+            l2=l2->next;
+        }
+        else if(l2==NULL){
+             ptr->val=l1->val;
+             if(l1->next==NULL){ptr->next=NULL; break;} 
+             ptr->next=(struct ListNode*)malloc(sizeof(struct ListNode));
+             ptr=ptr->next;
+             l1=l1->next;
+        }
+        else{
+            if(l1->val>l2->val){
+                ptr->val=l2->val;
+                
+                ptr->next=(struct ListNode*)malloc(sizeof(struct ListNode));
+                ptr=ptr->next;
+                l2=l2->next;
+            }
+            else{
+                ptr->val=l1->val;
+                
+                ptr->next=(struct ListNode*)malloc(sizeof(struct ListNode));
+                ptr=ptr->next;
+                l1=l1->next;
+            }
+            
+        }
+       
+    }
+    return l3;
+}
 ```
 

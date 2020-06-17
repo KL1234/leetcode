@@ -15,6 +15,7 @@ The order of elements can be changed. It doesn't matter what you leave beyond th
   It doesn't matter what you leave beyond the returned length. 
   
 ## 程式
+c
 ```c
 int removeElement(int* nums, int numsSize, int val){
     int i,r=0;

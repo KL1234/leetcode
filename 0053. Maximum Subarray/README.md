@@ -11,6 +11,7 @@ Given an integer array nums, find the contiguous subarray (containing at least o
   Explanation: [4,-1,2,1] has the largest sum = 6.
   
 ## 程式
+c
 ```c
 int maxSubArray(int* nums, int numsSize){
     int i,max=INT_MIN;

@@ -32,6 +32,7 @@ Given a roman numeral, convert it to an integer. Input is guaranteed to be withi
   Output: 9    
 
 ## 程式
+c
 ```c
 int magic(char a)
 {

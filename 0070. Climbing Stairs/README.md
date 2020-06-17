@@ -23,6 +23,7 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
   2. 1 step + 2 steps    
   3. 2 steps + 1 step  
 ## 程式
+c++
 ```cpp
 class Solution {
 public:

@@ -27,6 +27,7 @@ Note that an empty string is also considered valid.
 * Input: "{[]}"      
   Output: true
 ## 程式
+c
 ```c
 int magic(char* s){
     int l,i,r=0;

@@ -17,6 +17,7 @@ Do not allocate extra space for another array, you must do this by ***modifying 
   It doesn't matter what values are set beyond the returned length.
   
 ## 程式
+c
 ```c
 int removeDuplicates(int* nums, int numsSize){
     int i,r=0;

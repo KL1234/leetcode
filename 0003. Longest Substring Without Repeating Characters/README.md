@@ -20,6 +20,7 @@ Given a string, find the length of the ***longest substring*** without repeating
   Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
 ## 程式
+c
 ```c
 int lengthOfLongestSubstring(char * s){
     int nums[128];
