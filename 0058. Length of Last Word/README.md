@@ -14,6 +14,7 @@ Note: A word is defined as a ***maximal substring*** consisting of non-space cha
   Output: 5
   
 ## 程式
+c
 ```c
 int lengthOfLastWord(char * s){
     int len=strlen(s);
