@@ -4,7 +4,7 @@
 
 Given a 32-bit signed integer, reverse digits of an integer.
 
-範例:
+## 範例:
 
 * Input: 123       
   Output: 321

@@ -4,7 +4,7 @@
 
 Given a string, find the length of the ***longest substring*** without repeating characters.
 
-範例:
+## 範例:
 
 * Input: "abcabcbb"   
   Output: 3     

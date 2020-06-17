@@ -4,7 +4,7 @@
 
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
-範例:
+## 範例:
 
 * Input: 121     
   Output: true
