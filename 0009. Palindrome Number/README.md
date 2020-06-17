@@ -19,6 +19,7 @@ Determine whether an integer is a palindrome. An integer is a palindrome when it
   Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 ## 程式
+c
 ```c
 bool isPalindrome(int x){
     int a=0,x1;
