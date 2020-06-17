@@ -6,7 +6,7 @@ Given an array of integers, return ***indices*** of the two numbers such that th
 
 You may assume that each input would have ***exactly*** one solution, and you may not use the same element twice.
 
-範例:
+##範例:
 
 * Given nums = [2, 7, 11, 15], target = 9,    
   Because nums[0] + nums[1] = 2 + 7 = 9,   
