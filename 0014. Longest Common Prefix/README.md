@@ -16,6 +16,7 @@ If there is no common prefix, return an empty string "".
   Explanation: There is no common prefix among the input strings.       
   
 ## 程式
+c
 ```c
 void *magic(char* s1, char* s2,char *a){
     int l=0;
