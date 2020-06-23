@@ -13,6 +13,28 @@ You may assume that each input would have ***exactly*** one solution, and you ma
   return [0, 1]. 
 
 ## 程式
+c++
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> ans;
+        map<int,int> hashMap;
+        map<int,int>::iterator iter;
+        for(int i=0;i<nums.size();i++){
+            iter = hashMap.find(target-nums[i]);
+            if(iter==hashMap.end())
+                hashMap.insert(pair<int,int>(nums[i],i));
+            else{
+                ans.push_back(iter->second);
+                ans.push_back(i);
+                return ans;
+            }
+        }     
+        return ans;
+    }
+};
+```
 c
 ```c
 /**
